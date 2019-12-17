@@ -69,6 +69,14 @@ public class BrowserClass extends DriverClass {
                 driver = initChrome();
 
         }
+
+        driver.manage().window().maximize();
+    }
+
+    public void closeBrowser()
+    {
+        driver.manage().deleteAllCookies();
+        driver.quit();
     }
 
 }

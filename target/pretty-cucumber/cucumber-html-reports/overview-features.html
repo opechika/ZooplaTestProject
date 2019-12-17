@@ -52,9 +52,9 @@ $(document).ready(function() {
             data: [
                 8,
                 0,
+                7,
                 0,
-                0,
-                0
+                1
             ],
             backgroundColor: [
                 "#00B000",
@@ -93,7 +93,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 8) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 16) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -107,7 +107,7 @@ $(document).ready(function() {
         datasets: [{
             data: [
                 1,
-                0
+                1
             ],
             backgroundColor: [
                 "#00B000",
@@ -140,7 +140,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 1) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 2) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -154,7 +154,7 @@ $(document).ready(function() {
         datasets: [{
             data: [
                    1,
-                   0
+                   1
                ],
                backgroundColor: [
                 "#00B000",
@@ -187,7 +187,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 1) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 2) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -228,7 +228,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-            <td>05 Dec 2019, 19:50</td>
+            <td>17 Dec 2019, 21:14</td>
     </tr>
   </tbody>
 </table>
@@ -336,8 +336,25 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="10958850500">10.958</td>
+        <td class="duration" data-value="2945375300">2.945</td>
         <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="report-feature_1_3162906938.html">Search Properties For Sale</a></td>
+
+        <td >0</td>
+        <td >0</td>
+        <td     class="skipped"   >7</td>
+        <td >0</td>
+        <td   class="undefined" >1</td>
+        <td class="total">8</td>
+
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="598900">0.000</td>
+        <td class="failed">Failed</td>
       </tr>
       </tbody>
 
@@ -346,31 +363,31 @@ $(document).ready(function() {
       <td></td>
       <td>8</td>
       <td>0</td>
+      <td>7</td>
       <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>8</td>
+      <td>1</td>
+      <td>16</td>
 
       <td>1</td>
-      <td>0</td>
       <td>1</td>
+      <td>2</td>
 
-      <td class="duration">10.958</td>
-      <td>1</td>
+      <td class="duration">2.945</td>
+      <td>2</td>
     </tr>
     <tr>
       <td></td>
-            <td>100.00%</td>
+            <td>50.00%</td>
       <td>0.00%</td>
+      <td>43.75%</td>
       <td>0.00%</td>
-      <td>0.00%</td>
-      <td>0.00%</td>
+      <td>6.25%</td>
       <td></td>
-      <td>100.00%</td>
-      <td>0.00%</td>
+      <td>50.00%</td>
+      <td>50.00%</td>
       <td></td>
       <td></td>
-      <td>100.00%</td>
+      <td>50.00%</td>
     </tr>
   </tfoot>
 </table>
